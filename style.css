@@ -38,7 +38,15 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar {
+  width: 0.25rem;
+  background: rgb(229, 165, 93, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: var(--color-primary-variant);
+  border-radius: 0.25rem;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -745,47 +753,45 @@ footer {
   }
 
   /* gallery */
-  #gallery{
+  #gallery {
     margin-top: 6rem;
   }
-  .gallery__container p{
+  .gallery__container p {
     margin-top: 1rem;
   }
-  .swiper-wrapper{
+  .swiper-wrapper {
     margin-top: 3rem;
   }
 
   /* exibitons */
-  #exhibitions{
+  #exhibitions {
     margin-top: 6rem;
   }
-  .exhibitions__head{
+  .exhibitions__head {
     grid-template-columns: 1fr;
   }
-  .exhibitions__head > p{
+  .exhibitions__head > p {
     margin-top: 1rem;
   }
-  .exhibitions__gallery{
+  .exhibitions__gallery {
     display: block;
   }
-  .exhibitions__gallery article{
+  .exhibitions__gallery article {
     width: 100%;
     height: fit-content;
     margin-bottom: 1rem;
   }
 
   /* footer */
-  .footer__head{
+  .footer__head {
     flex-direction: column;
   }
-  .footer__head h2{
+  .footer__head h2 {
     font-size: 1.5rem;
   }
-  .footer__links{
+  .footer__links {
     flex-direction: column;
     gap: 2rem;
     margin-top: 5rem;
   }
-
-
 }

@@ -73,7 +73,7 @@ a {
   color: var(--color-light);
   transition: var(--transition);
 }
-a:hover {
+.active, a:hover {
   color: var(--color-primary);
 }
 
@@ -793,5 +793,13 @@ footer {
     flex-direction: column;
     gap: 2rem;
     margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 2500px) and (min-width: 1025px) {
+  .nav__toggle-btn {
+    display: none !important;
+  }
+  .nav__links {
+    display: flex !important;
   }
 }

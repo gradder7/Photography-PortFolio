@@ -8,10 +8,10 @@ window.addEventListener("scroll", () => {
 
 //contact button(circular text button)
 const textButton = document.querySelectorAll(".contact__btn");
-console.log(textButton);
+// console.log(textButton);
 textButton.forEach((textButton) => {
   let text = textButton.querySelector("p");
-  console.log(text);
+  //   console.log(text);
   text.innerHTML = text.innerHTML
     .split("")
     .map((char, index) => {
@@ -59,6 +59,20 @@ const closeNav = () => {
 closeNavBtn.addEventListener("click", closeNav);
 
 // when click link of menu close menu
-nav.querySelectorAll('li a').forEach(navlink=>{
-    navlink.addEventListener('click',closeNav)
-})
+nav.querySelectorAll("li a").forEach((navlink) => {
+  navlink.addEventListener("click", () => {
+    if (window.screen.width <= "1024") {
+      closeNav();
+    }
+  });
+});
+
+//handle active class
+var parentActive = document.querySelector(".nav__links");
+Array.from(parentActive.children).forEach((element) => {
+  element.addEventListener("click", (event) => {
+    let activeLink = document.querySelector(".active");
+    activeLink.classList.remove("active");
+    event.target.classList.add('active');
+  });
+});

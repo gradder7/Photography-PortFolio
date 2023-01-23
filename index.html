@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&family=Rubik+Distressed&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Satisfy&display=swap"
       rel="stylesheet"
     />
+    <!-- bootstrap -->
+
     <!-- swiper js -->
     <link
       rel="stylesheet"
@@ -34,11 +36,12 @@
         <a href="index.html" class="nav__logo"
           ><img src="./images/logo.png" alt="logo"
         /></a>
-        <ul class="nav__links" id="linkall">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#exhibitions">Exhibitions</a></li>
+        <ul class="nav__links">
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#exhibitions">Exhibitions</a></li>
+          <li><a href="./pages/photos.html">Photos - PortFolio</a></li>
         </ul>
         <ul class="nav__social">
           <li>
@@ -55,6 +58,21 @@
             <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
           </li>
         </ul>
+
+        <!-- check -->
+        <!-- <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Green Theme</label>
+</div> -->
+        <div class="mode__container">
+          <span>Light</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span>Purple</span>
+        </div>
+        <!--  -->
         <button class="nav__toggle-btn" id="nav__toggle-open">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -66,47 +84,51 @@
     <!-- end of nav bar -->
 
     <!-- header section -->
-    <header>
-      <div class="container header__container">
-        <div class="header__left">
-          <div class="header__image-bg"></div>
-          <div class="header__image-lg">
-            <img src="./images/header.jpg" alt="header_image" />
+
+    <section id="home">
+      <header>
+        <div class="container header__container">
+          <div class="header__left">
+            <div class="header__image-bg"></div>
+            <div class="header__image-lg">
+              <img src="./images/header.jpg" alt="header_image" />
+            </div>
+            <div class="header__image-sm">
+              <img src="./images/header.jpg" alt="header_image" />
+            </div>
           </div>
-          <div class="header__image-sm">
-            <img src="./images/header.jpg" alt="header_image" />
+          <div class="header__right">
+            <div class="header__head">
+              <div class="empty header__empty"></div>
+              <a class="header__tag">#Photo Shoot 2023 latest</a>
+            </div>
+            <h1>See the beauty of the world through my lense</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, perferendis? Incidunt, mollitia ullam vel ut aperiam
+              animi, harum tenetur eum, officiis ipsa nihil alias placeat dolor!
+              Et aperiam laborum doloremque?
+            </p>
+            <a href="mailto:mehra3228@gmail.com" class="header__btn-md"
+              >Let's Talk</a
+            >
           </div>
         </div>
-        <div class="header__right">
-          <div class="header__head">
-            <div class="empty header__empty"></div>
-            <a class="header__tag">#Photo Shoot 2023 latest</a>
-          </div>
-          <h1>See the beauty of the world through my lense</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-            perferendis? Incidunt, mollitia ullam vel ut aperiam animi, harum
-            tenetur eum, officiis ipsa nihil alias placeat dolor! Et aperiam
-            laborum doloremque?
-          </p>
-          <a href="mailto:mehra3228@gmail.com" class="header__btn-md"
-            >Let's Talk</a
-          >
+      </header>
+      <div class="header__frames">
+        <div class="header__frame">
+          <img src="./images/frame1.jpg" alt="frame1" />
+        </div>
+        <div class="header__frame">
+          <img src="./images/frame2.jpg" alt="frame2" />
         </div>
       </div>
-    </header>
-    <div class="header__frames">
-      <div class="header__frame">
-        <img src="./images/frame1.jpg" alt="frame1" />
-      </div>
-      <div class="header__frame">
-        <img src="./images/frame2.jpg" alt="frame2" />
-      </div>
-    </div>
-    <a href="mailto:mehra3228@gmail.com" class="header__btn contact__btn">
-      <i class="fa-solid fa-arrow-trend-up"></i>
-      <p>CONTACT - SEND ME AN EMAIL</p>
-    </a>
+      <a href="mailto:mehra3228@gmail.com" class="header__btn contact__btn">
+        <i class="fa-regular fa-envelope"></i>
+        <p>CONTACT - SEND ME AN EMAIL</p>
+      </a>
+    </section>
+
     <!-- end of header section -->
 
     <!-- about section -->
@@ -118,7 +140,7 @@
           Preeti Khati
         </h2>
         <a href="mailto:mehra3228@gmail.com" class="contact__btn about__btn">
-          <i class="fa-solid fa-arrow-trend-up"></i>
+          <i class="fa-regular fa-envelope"></i>
           <p>CONTACT - SEND ME AN EMAIL</p>
         </a>
         <div class="about__left">
@@ -210,7 +232,7 @@
     </section>
     <!-- end of gallery -->
     <!-- exebition section -->
-    <div id="exhibitions">
+    <section id="exhibitions">
       <div class="container exhibitions_container">
         <h2 class="exhibitions__title">Exhibitions</h2>
         <div class="empty exhibitions__empty"></div>
@@ -226,7 +248,7 @@
             href="mailto:mehra3228@gmail.com"
             class="contact__btn exhibitions__btn"
           >
-            <i class="fa-solid fa-arrow-trend-up"></i>
+            <i class="fa-regular fa-envelope"></i>
             <p>CONTACT - SEND ME AN EMAIL</p>
           </a>
         </div>
@@ -240,7 +262,7 @@
           <article><img src="./images/e5.jpg" alt="ex" /></article>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end of exibitions -->
     <!-- footer section -->
     <footer>
@@ -248,7 +270,7 @@
         <div class="footer__head">
           <h2 class="footer__title">Mehra3228@gmail.com</h2>
           <a href="mailto:mehra3228@gmail.com" class="footer__btn"
-            ><i class="fa-solid fa-arrow-trend-up"></i
+            ><i class="fa-regular fa-envelope"></i
           ></a>
         </div>
         <ul class="footer__links">
@@ -261,8 +283,8 @@
     </footer>
 
     <!-- swiper js cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="app.js"></script>
+    <script type="module" src="./scripts/app.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -1,12 +1,18 @@
 import activeToggle from "./activePage.js";
+import navRun from "./navBar.js";
 import toggleMode from "./toggleMode.js";
-
 
 window.addEventListener("scroll", () => {
   document
     .querySelector("nav")
     .classList.toggle("window-scrolled", window.scrollY > 0);
 });
+
+// navbar js
+const nav = document.querySelector(".nav__links");
+const openNavBtn = document.querySelector("#nav__toggle-open");
+const closeNavBtn = document.querySelector("#nav__toggle-close");
+navRun(nav, openNavBtn, closeNavBtn);
 
 // photos gallery
 const galleryItem = document.getElementsByClassName("gallery-item");

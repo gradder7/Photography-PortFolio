@@ -663,6 +663,9 @@ footer {
   .nav__links li:nth-child(4) {
     animation-delay: 600ms;
   }
+  .nav__links li:nth-child(5) {
+    animation-delay: 800ms;
+  }
   @keyframes navAnimation {
     to {
       transform: rotateX(0);
